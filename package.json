@@ -1,13 +1,33 @@
 {
-    "name": "har-file-extractor",
-    "version": "1.0.0",
-    "description": "A tool to extract data and resources from HAR files",
-    "main": "extractor.js",
-    "scripts": {
-      "start": "node extractor.js"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "type": "commonjs"
-  }
+  "name": "har-file-extractor",
+  "version": "1.0.0",
+  "description": "Extract resources and data from HTTP Archive (HAR) files with organized directory structure",
+  "main": "extractor.js",
+  "scripts": {
+    "start": "node extractor.js",
+    "extract": "node extractor.js"
+  },
+  "keywords": [
+    "har",
+    "http-archive",
+    "extractor",
+    "web-development",
+    "network-analysis",
+    "devtools",
+    "browser-debugging"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/HarFileExtract.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/HarFileExtract/issues"
+  },
+  "homepage": "https://github.com/yourusername/HarFileExtract#readme"
+}
