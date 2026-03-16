@@ -1,4 +1,27 @@
-/input
-/output
-/node_modules
-/package-lock.json
+# Dependencies
+node_modules/
+package-lock.json
+
+# Input/Output directories
+input/
+output/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
