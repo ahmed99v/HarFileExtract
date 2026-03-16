@@ -1,0 +1,13 @@
+{
+    "name": "har-file-extractor",
+    "version": "1.0.0",
+    "description": "A tool to extract data and resources from HAR files",
+    "main": "extractor.js",
+    "scripts": {
+      "start": "node extractor.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs"
+  }
