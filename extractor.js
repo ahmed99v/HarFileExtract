@@ -1,28 +1,11 @@
 const fs = require('fs');
 const path = require('path');
-
+const CONFIG = require('./config');
 /**
  * HAR File Extractor
- * 
- * Extracts resources from HTTP Archive (HAR) files and saves them
- * to a structured directory hierarchy matching the original URLs.
- * 
- * @author Your Name
- * @version 1.0.0
+ * @author Ahmed Forneas
+ * @version 1.2.0
  */
-
-// ============================================================================
-// Configuration
-// ============================================================================
-
-const CONFIG = {
-  inputDir: path.resolve(__dirname, 'input'),
-  outputBaseDir: path.resolve(__dirname, 'output'),
-  removeZeroByteFiles: true,
-  maxFilenameLength: 250, // Windows max filename length
-  invalidChars: /[<>:"|?*%,!&()]/g,
-  replacementChar: '-',
-};
 
 // ============================================================================
 // Utility Functions
