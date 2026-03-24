@@ -3,9 +3,19 @@ const path = require('path');
 const CONFIG = require('./config');
 /**
  * HAR File Extractor
- * @author Ahmed Forneas
- * @version 1.2.0
+ * 
+ * Extracts resources from HTTP Archive (HAR) files and saves them
+ * to a structured directory hierarchy matching the original URLs.
+ * 
+ * @author Your Name
+ * @version 1.0.0
  */
+
+// ============================================================================
+// Configuration
+// ============================================================================
+
+
 
 // ============================================================================
 // Utility Functions
@@ -248,7 +258,16 @@ function processHarFiles() {
     try {
       const harFileName = path.basename(harFilePath);
       const harBaseName = path.basename(harFileName, '.har');
-      const outputDir = getUniqueFolder(CONFIG.outputBaseDir, harBaseName);
+      const outputDir = path.join(
+        CONFIG.outputBaseDir,
+        sanitizeFileName(harBaseName)
+      );
+
+      if (fs.existsSync(outputDir)) {
+        console.warn(`\n[${index + 1}/${harFiles.length}] Same HAR file folder exists: ${outputDir}`);
+        console.warn(`Skipping extraction for: ${harFileName}`);
+        return;
+      }
 
       console.log(`\n${'='.repeat(60)}`);
       console.log(`[${index + 1}/${harFiles.length}] Extracting: ${harFileName}`);
