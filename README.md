@@ -24,7 +24,7 @@ A powerful Node.js tool to extract resources and data from HTTP Archive (HAR) fi
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/HarFileExtract.git
+git clone https://github.com/ahmed99v/HarFileExtract.git
 cd HarFileExtract
 ```
 
