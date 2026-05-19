@@ -48,14 +48,12 @@ node extractor.js
 
 ## 📁 Project Structure
 
-```
 HarFileExtract/
 ├── input/          # Place your .har files here
 ├── output/         # Extracted files will be saved here
 ├── extractor.js    # Main extraction script
 ├── package.json    # Project configuration
 └── README.md       # This file
-```
 
 ## ⚙️ Configuration
 
@@ -80,11 +78,6 @@ const CONFIG = {
 6. **Saves Files**: Creates directory structure and saves files
 
 ## 🎯 Example
-
-Given a HAR file with entries like:
-- `https://example.com/api/data.json`
-- `https://example.com/css/style.css`
-- `https://example.com/js/app.js`
 
 The extractor will create:
 ```
