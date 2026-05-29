@@ -77,20 +77,6 @@ const CONFIG = {
 5. **Decodes Content**: Handles base64 and UTF-8 encoded content
 6. **Saves Files**: Creates directory structure and saves files
 
-## 🎯 Example
-
-The extractor will create:
-```
-output/
-└── example.com/
-    ├── api/
-    │   └── data.json
-    ├── css/
-    │   └── style.css
-    └── js/
-        └── app.js
-```
-
 ## 🔧 Troubleshooting
 
 - **No files extracted**: Ensure HAR files are in the `input/` directory
