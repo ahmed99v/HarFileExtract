@@ -55,8 +55,8 @@ HarFileExtract/
 ├── package.json    # Project configuration
 └── README.md       # This file
 
-## ⚙️ Configuration
 
+## ⚙️ Configuration
 Edit the `CONFIG` object in `extractor.js` to customize behavior:
 
 ```javascript
@@ -69,7 +69,6 @@ const CONFIG = {
 ```
 
 ## 📝 How It Works
-
 1. **Reads HAR Files**: Scans the `input/` directory for `.har` files
 2. **Parses Entries**: Extracts all HTTP entries from each HAR file
 3. **Normalizes Paths**: Converts URLs to file system paths
@@ -78,14 +77,12 @@ const CONFIG = {
 6. **Saves Files**: Creates directory structure and saves files
 
 ## 🔧 Troubleshooting
-
 - **No files extracted**: Ensure HAR files are in the `input/` directory
 - **Invalid characters**: The tool automatically sanitizes filenames
 - **Long filenames**: Automatically truncated to 250 characters (Windows limit)
 - **Duplicate folders**: Automatically renamed with `_new(1)`, `_new(2)`, etc.
 
 ## 📊 Output Statistics
-
 The tool provides detailed statistics:
 - Files processed
 - Files saved
@@ -93,15 +90,12 @@ The tool provides detailed statistics:
 - Failed entries
 
 ## 🤝 Contributing
-
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
-
 MIT License - feel free to use this project for any purpose.
 
 ## 🙏 Acknowledgments
-
 - Built for web developers who need to analyze HAR files
 - Useful for debugging and understanding web application behavior
 
