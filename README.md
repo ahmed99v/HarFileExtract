@@ -1,5 +1,5 @@
 # HAR File Extractor
-
+# Only used standard functions
 A powerful Node.js tool to extract resources and data from HTTP Archive (HAR) files, organizing them into a structured directory hierarchy that mirrors the original URLs.
 
 ## 🌟 Features
